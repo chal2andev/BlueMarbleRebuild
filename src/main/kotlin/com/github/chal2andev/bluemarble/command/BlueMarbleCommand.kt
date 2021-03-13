@@ -1,6 +1,7 @@
 package com.github.chal2andev.bluemarble.command
 
 import com.github.chal2andev.bluemarble.plugin.BlueMarblePlugin
+import com.github.chal2andev.bluemarble.system.Progress
 import com.github.monun.kommand.KommandDispatcherBuilder
 import net.md_5.bungee.api.ChatColor
 import org.bukkit.entity.Player
@@ -49,7 +50,7 @@ internal object BlueMarbleCommand {
     }
     private fun start(sender: Player) {
         if (sender.isOp){
-            TODO("게임 시작")
+            Progress().onStart()
         }else{
             sender.sendMessage("${ChatColor.RED}권한이 없습니다.")
         }
@@ -64,7 +65,7 @@ internal object BlueMarbleCommand {
     }
     private fun stopConfirm(sender: Player){
         if (sender.isOp){
-            TODO("게임 강제종료")
+            Progress().onStop()
         }else{
             sender.sendMessage("${ChatColor.RED}권한이 없습니다.")
         }
