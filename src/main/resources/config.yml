@@ -1,0 +1,15 @@
+asia_africa:
+  build:
+    villa: 50000
+    building: 150000
+    hotel: 250000
+  taipei:
+    price: 50000
+    tolls:
+      defalut: 2000
+      villa: 10000
+      building: 90000
+      hotel: 250000
+money:
+  default: 2930000
+  pvp: 5860000

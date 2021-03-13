@@ -1,1 +1,1 @@
-rootProject.name = "Plugin Sample"
+rootProject.name = "BlueMarble"
