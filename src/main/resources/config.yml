@@ -4,12 +4,327 @@ asia_africa:
     building: 150000
     hotel: 250000
   taipei:
+    name: "타이베이"
     price: 50000
     tolls:
-      defalut: 2000
+      default: 2000
       villa: 10000
       building: 90000
       hotel: 250000
+  beijing:
+    name: "베이징"
+    price: 80000
+    tolls:
+      default: 4000
+      villa: 20000
+      building: 180000
+      hotel: 450000
+  manila:
+    name: "마닐라"
+    price: 80000
+    tolls:
+      default: 4000
+      villa: 20000
+      building: 180000
+      hotel: 450000
+  singapore:
+    name: "싱가폴"
+    price: 100000
+    tolls:
+      default: 6000
+      villa: 30000
+      building: 270000
+      hotel: 550000
+  cairo:
+    name: "카이로"
+    price: 100000
+    tolls:
+      default: 6000
+      villa: 30000
+      building: 270000
+      hotel: 550000
+  istanbul:
+    name: "이스탄불"
+    price: 120000
+    tolls:
+      default: 8000
+      villa: 40000
+      building: 300000
+      hotel: 600000
+Europe_NA:
+  athens:
+    name: "아테네"
+    price: 140000
+    tolls:
+      default: 10000
+      villa: 50000
+      building: 450000
+      hotel: 750000
+  copenhagen:
+    name: "코펜하겐"
+    price: 160000
+    tolls:
+      default: 12000
+      villa: 60000
+      building: 500000
+      hotel: 900000
+  stockholm:
+    name: "스톡홀름"
+    price: 160000
+    tolls:
+      default: 12000
+      villa: 60000
+      building: 500000
+      hotel: 900000
+  bern:
+    name: "베른"
+    price: 180000
+      tolls:
+        default: 14000
+        villa: 70000
+        building: 500000
+        hotel: 950000
+  berlin:
+    name: "베를린"
+    price: 180000
+      tolls:
+        default: 14000
+        villa: 70000
+        building: 500000
+        hotel: 950000
+  ottawa:
+    name: "오타와"
+    price: 200000
+      tolls:
+        default: 14000
+        villa: 70000
+        building: 500000
+        hotel: 1000000
+scenic_spot:
+  buenosaires:
+    name: "부에노스 아이레스"
+    price: 220000
+      tolls:
+        default: 18000
+        villa: 90000
+        building: 700000
+        hotel: 1050000
+  saopaulo:
+    name: "상파울루"
+    price: 240000
+      tolls:
+        default: 20000
+        villa: 100000
+        building: 750000
+        hotel: 1100000
+  sydeny:
+    name: "시드니"
+    price: 240000
+      tolls:
+        default: 20000
+        villa: 100000
+        building: 750000
+        hotel: 1100000
+  hawaii:
+    name: "하와이"
+    price: 260000
+      tolls:
+        default: 22000
+        villa: 110000
+        building: 800000
+        hotel: 1150000
+  lisbon:
+    name: "리스본"
+    price: 260000
+      tolls:
+        default: 22000
+        villa: 110000
+        building: 800000
+        hotel: 1150000
+  madrid:
+    name: "마드리드"
+    price: 280000
+      tolls:
+        default: 24000
+        villa: 120000
+        building: 850000
+        hotel: 1200000
+big_city:
+  tokyo:
+    name: "도쿄"
+    price: 300000
+      tolls:
+        default: 26000
+        villa: 130000
+        building: 900000
+        hotel: 1270000
+  paris:
+    name: "파리"
+    price: 320000
+      tolls:
+        default: 28000
+        villa: 150000
+        building: 1000000
+        hotel: 1400000
+  rome:
+    name: "로마"
+    price: 320000
+      tolls:
+        default: 28000
+        villa: 150000
+        building: 1000000
+        hotel: 1400000
+  london:
+    name: "런던"
+    price: 350000
+      tolls:
+        default: 35000
+        villa: 170000
+        building: 1100000
+        hotel: 1500000
+  new_york:
+    name: "뉴욕"
+    price: 350000
+      tolls:
+        default: 35000
+        villa: 170000
+        building: 1100000
+        hotel: 1500000
+korea:
+  jeju:
+    name: "제주도"
+    price: 200000
+    tolls:
+      default: 300000
+  busan:
+    name: "부산"
+    price: 500000
+    tolls:
+      default: 600000
+  seoul:
+    name: "서울"
+    price: 1000000
+    tolls:
+      default: 2000000
+vehicle:
+  concord_airplane:
+    name: "콩코드 여객기"
+    price: 200000
+    tolls:
+      default: 300000
+  lake_queen_elizabeth:
+    name: "퀸 엘리자베스 호"
+    price: 300000
+    tolls:
+      default: 250000
+  columbia_lake:
+    name: "콜롬비아호"
+    price: 450000
+    tolls:
+      default: 400000
+      space: 200000
+special:
+  welfare_give:
+    name: "사회복지기금 접수처"
+    tolls: 150000
+    description: "사회복지기금 15만원을 기부합니다."
+  welfare_get:
+    name: "사회복지기금 수령처"
+    description: "사회복지기금을 수령합니다."
+  desert_island:
+    name: "무인도"
+    description: "3턴동안 무인도에 머무릅니다. 주사위로 더블이 나올시 탈출합니다."
+  trip_space:
+    name: "우주여행"
+    description: "콜롬비아호를 타고 우주여행을 합니다. 콜롬비아호 소유자가 있을경우"
+gold_key:
+    air_travel:
+      name: "항공여행"
+      description: "콩코드 여객기의 객실료를 지불한뒤 타이베이로 가세요."
+    tour:
+      name: "관광여행"
+      description: "퀸 엘리자베스 호의 승선료를 지불한뒤 홍콩으로 가세요."
+    highway:
+      name: "고속도로"
+      description: "출발지로 가세요."
+    trip_busan:
+      name: "부산여행"
+      description: "부산으로 가세요"
+    trip_jeju:
+      name: "제주여행"
+      description: "제주도로 가세요"
+    trip_seoul:
+      name: "서울여행"
+      description: "서울로 가세요"
+    go_back_two:
+      name: "뒤로 2칸"
+      description: "뒤로 두칸 가세요"
+    go_back_three:
+      name: "뒤로 3칸"
+      description: "뒤로 세칸 가세요"
+    desert_island:
+      name: "무인도"
+      description: "무인도로 가세요"
+    fund:
+      name: "사회복지기금 배당"
+      description: "사회복지기금 수령처로 이동하세요"
+    trip_world:
+      name: "세계일주"
+      description: "한바퀴를 돌아 제자리로 오세요. 사회복지기금이 있다면 수령하세요."
+    trip_space:
+      name: "우주여행"
+      description: "우주여행 승강장으로 이동합니다. 이용료는 지불하지 않습니다."
+    nobel:
+      name: "노벨 평화상"
+      description: "노벨상을 받았습니다! 30만원을 지급받으세요."
+    pension:
+      name: "노후연금"
+      description: "늙으셨네요! 노후 연금으로 5만원이 지급됩니다."
+    lotto:
+      name: "복권담청"
+      description: "복권에 당첨되었습니다. 20만원을 지급받으세요."
+    birthday:
+      name: "생일축하"
+      description: "생일축하 드립니다! 모든 플레이어에게서 천원씩 지급받으세요."
+    racer:
+      name: "자동차 경주 우승"
+      description: "축하드립니다! 자동차 경주에서 우승하셨습니다. 상금으로 10만원을 받아가세요."
+    scholarship:
+      name: "장학금"
+      description: "열심히 공부하셨네요! 장학금 10만원을 받아가세요."
+    show:
+      name: "장기자랑"
+      description: "장기자랑을 해서 친구들에게 돈을 뜯으세요!"
+    crime_pre:
+      name: "건물 방범비"
+      description: "호텔: 5만원, 빌딩: 3만원, 별장: 1만원에 해당하는 방범비를 지출해야합니다."
+    repair:
+      name: "건물 수리비"
+      description: "호텔: 10만원, 빌딩: 6만원, 별장: 3만원에 해당하는 수리비를 지출해야합니다."
+    tax:
+      name: "건물 정기종합소득세"
+      description: "호텔: 15만원, 빌딩: 10만원, 별장: 5만원에 해당하는 소득세를 지출해야합니다."
+    fast:
+      name: "과속운전"
+      description: "과속운전을 했습니다. 벌금으로 5만원을 지출해야 합니다."
+    hospital:
+      name: "병원비"
+      description: "길가다 넘어져서 뼈가 부러졌습니다. 병원비 5만원을 지출해야 합니다."
+    study_abroad:
+      name: "해외유학"
+      description: "해외유학을 가기로 결정하였습니다. 비행기값으로 10만원을 지불해야 합니다."
+    radio:
+      name: "무인도 탈출용 무전기"
+      description: "무인도에서 구조를 요청합니다. 보관이 가능하고, 20만원으로 은행에 판매할 수 있습니다."
+    half_price:
+      name: "반액대매출"
+      description: "소유하고 있는 부동산중 가장 비싼 땅을 건물 가격을 포함한 반값으로 매각하여야 합니다."
+    free_pass:
+      name: "우대권"
+      description: "통행료를 지불하지 않을수 있습니다. 보관이 가능하고, 30만원으로 은행에 판매할 수 있습니다."
+
+
+
 money:
   default: 2930000
   pvp: 5860000

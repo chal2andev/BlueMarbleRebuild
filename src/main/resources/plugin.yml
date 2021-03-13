@@ -3,3 +3,11 @@ main: $pluginMain
 version: $version
 api-version: '1.16'
 depend: [Kotlin]
+
+commands:
+  bluemarble:
+    usage: /bluemarble [args..]
+    description: bluemarble plugin control
+permissions:
+  d:
+    default
