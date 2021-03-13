@@ -1,3 +1,3 @@
-# PluginSample
+# BlueMarble
 
-plugin sample
+개발중
