@@ -61,6 +61,7 @@ tasks {
 
         if(relocate){
             relocate("com.github.monun.kommand", "com.github.monun.kommand")
+            relocate("com.github.monun.tap", "com.github.monun.tap")
         }
 
         doFirst {

@@ -8,6 +8,3 @@ commands:
   bluemarble:
     usage: /bluemarble [args..]
     description: bluemarble plugin control
-permissions:
-  d:
-    default
