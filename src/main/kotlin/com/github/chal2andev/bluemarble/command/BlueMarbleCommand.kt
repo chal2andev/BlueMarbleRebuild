@@ -1,8 +1,10 @@
 package com.github.chal2andev.bluemarble.command
 
+import com.github.chal2andev.bluemarble.invfx.BlueMarbleInvFX
 import com.github.chal2andev.bluemarble.plugin.BlueMarblePlugin
 import com.github.chal2andev.bluemarble.system.Progress
 import com.github.monun.kommand.KommandDispatcherBuilder
+import com.github.monun.invfx.openWindow
 import net.md_5.bungee.api.ChatColor
 import org.bukkit.entity.Player
 
@@ -37,9 +39,18 @@ internal object BlueMarbleCommand {
                     }
                 }
             }
+            then("test"){
+                then("card"){
+                    executes {
+                            context ->
+                        testCard(context.sender as Player)
+                    }
+                }
+
+            }
         }
     }
-    private val prefix: String = "${ChatColor.GOLD}[BlueMarble] ${ChatColor.YELLOW}"
+    val prefix: String = "${ChatColor.GOLD}[BlueMarble] ${ChatColor.YELLOW}"
 
     private fun bluemarble(sender: Player){
         if (sender.isOp){
@@ -50,7 +61,7 @@ internal object BlueMarbleCommand {
     }
     private fun start(sender: Player) {
         if (sender.isOp){
-            Progress().onStart()
+            Progress.onStart(sender)
         }else{
             sender.sendMessage("${ChatColor.RED}권한이 없습니다.")
         }
@@ -65,9 +76,13 @@ internal object BlueMarbleCommand {
     }
     private fun stopConfirm(sender: Player){
         if (sender.isOp){
-            Progress().onStop()
+            Progress.onStop()
         }else{
             sender.sendMessage("${ChatColor.RED}권한이 없습니다.")
         }
+    }
+    private fun testCard(sender: Player){
+        val dice = BlueMarbleInvFX.cardGUI(sender)
+        sender.openWindow(dice)
     }
 }

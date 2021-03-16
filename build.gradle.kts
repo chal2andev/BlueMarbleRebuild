@@ -20,7 +20,7 @@ dependencies {
     compileOnly(kotlin("stdlib"))
     compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
     compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
-    compileOnly("com.github.noonmaru:invfx:1.3.0")
+    compileOnly("com.github.monun:invfx:1.4.2")
     implementation("com.github.monun:tap:3.3.5")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.github.monun:kommand:0.7.+")
